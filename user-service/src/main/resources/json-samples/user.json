@@ -1,0 +1,142 @@
+[{
+  "id": 1,
+  "name": "Marketa",
+  "surname": "Spear",
+  "emailAddress": "mspear0@csmonitor.com",
+  "address": "88930 Crescent Oaks Road",
+  "contactNumber": "778-898-7157",
+  "password": "MvS26g",
+  "roles": [
+    {
+        "roleType": "Contractee",
+        "description": "Able to perform actions such as adding load for contractors and view biddings and choose a contractor and view contractors"
+      }
+
+  ]
+}, {
+  "id": 2,
+  "name": "Marcellus",
+  "surname": "Berni",
+  "emailAddress": "mberni1@tripadvisor.com",
+  "address": "2 Towne Lane",
+  "contactNumber": "539-917-7041",
+  "password": "Ik32vvFE",
+  "roles": [
+    {
+        "roleType": "Admin",
+        "description": "Able to perform all actions such as insert, delete, update and read"
+      }
+  ]
+}, {
+  "id": 3,
+  "name": "Garnet",
+  "surname": "Lamburne",
+  "emailAddress": "glamburne2@bloomberg.com",
+  "address": "6786 Esch Alley",
+  "contactNumber": "541-386-0098",
+  "password": "d9a0Nhez",
+  "roles": [
+    {
+        "roleType": "Contractor",
+        "description": "Able to perform action such as adding new truck and personal details and updating information related to his/her truck"
+      }
+  ]
+}, {
+  "id": 4,
+  "name": "Darci",
+  "surname": "Cullotey",
+  "emailAddress": "dcullotey3@51.la",
+  "address": "5 Vahlen Drive",
+  "contactNumber": "490-789-5369",
+  "password": "SFatcvCST9dG",
+  "roles": [
+    {
+        "roleType": "Guest",
+        "description": "Guest is a no n-registered user, and can only view trucks and loads"
+      }
+  ]
+}, {
+  "id": 5,
+  "name": "Fan",
+  "surname": "Sterricks",
+  "emailAddress": "fsterricks4@free.fr",
+  "address": "1 Sauthoff Park",
+  "contactNumber": "505-411-5519",
+  "password": "KuS010v98LTV",
+  "roles": [
+    {
+        "roleType": "Guest",
+        "description": "Guest is a no n-registered user, and can only view trucks and loads"
+      }
+  ]
+}, {
+  "id": 6,
+  "name": "Pate",
+  "surname": "Harwell",
+  "emailAddress": "pharwell5@theglobeandmail.com",
+  "address": "6 Farwell Point",
+  "contactNumber": "856-678-0785",
+  "password": "tc1G8HFv",
+  "roles": [
+    {
+        "roleType": "Guest",
+        "description": "Guest is a no n-registered user, and can only view trucks and loads"
+      }
+  ]
+}, {
+  "id": 7,
+  "name": "Christie",
+  "surname": "McMurdo",
+  "emailAddress": "cmcmurdo6@pagesperso-orange.fr",
+  "address": "645 Debs Trail",
+  "contactNumber": "235-263-9316",
+  "password": "IdRPqP3f4K",
+  "roles": [
+    {
+        "roleType": "Contractee",
+        "description": "Able to perform actions such as adding load for contractors and view biddings and choose a contractor and view contractors"
+      }
+  ]
+}, {
+  "id": 8,
+  "name": "Terry",
+  "surname": "Larimer",
+  "emailAddress": "tlarimer7@etsy.com",
+  "address": "016 Declaration Lane",
+  "contactNumber": "839-965-2194",
+  "password": "gSRa2Dbo",
+  "roles": [
+    {
+        "roleType": "Contractor",
+        "description": "Able to perform action such as adding new truck and personal details and updating information related to his/her truck"
+    }
+  ]
+}, {
+  "id": 9,
+  "name": "Marve",
+  "surname": "Eblein",
+  "emailAddress": "meblein8@cam.ac.uk",
+  "address": "61843 Dawn Alley",
+  "contactNumber": "329-615-0234",
+  "password": "1Nhygu",
+  "roles": [
+    {
+        "roleType": "Contractor",
+        "description": "Able to perform action such as adding new truck and personal details and updating information related to his/her truck"
+      }
+  ]
+}, {
+  "id": 10,
+  "name": "Fonz",
+  "surname": "Perago",
+  "emailAddress": "fperago9@homestead.com",
+  "address": "9884 Loomis Terrace",
+  "contactNumber": "257-604-5660",
+  "password": "vDKAL8",
+  "roles": [
+    {
+        "roleType": "Contractor",
+        "description": "Able to perform action such as adding new truck and personal details and updating information related to his/her truck"
+      }
+  ]
+}]
