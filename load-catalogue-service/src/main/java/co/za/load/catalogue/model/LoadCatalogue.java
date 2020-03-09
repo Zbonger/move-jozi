@@ -5,16 +5,13 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity(name = "load")
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString(exclude = "images")
 public class LoadCatalogue extends AbstractEntity {
 
     private String summary;
@@ -28,7 +25,8 @@ public class LoadCatalogue extends AbstractEntity {
     private Long userId;
     private Double startBiddingPrice;
 
-    @OneToMany(mappedBy = "loadCatalogue", cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne
+    @JoinColumn(name = "truck_image_id", nullable = true)
     @JsonManagedReference
-    private List<Image> images;
+    private TruckImage truckImage;
 }

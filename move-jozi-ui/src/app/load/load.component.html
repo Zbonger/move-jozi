@@ -1,0 +1,187 @@
+<div class="panel-header panel-header-sm">
+</div>
+
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+
+        <div class="card-header">
+          <h5 class="title">Current Available Loads</h5>
+        </div>
+
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+
+              <tbody
+                *ngFor="let loadCatalogue of listOfLoadCatalogues; let even = even; let odd = odd; let i = index; let last= last">
+              <tr *ngIf="even">
+                <td>
+                  <div class="row grid">
+                    <figure class="effect-ruby" style="width: 35rem;">
+                      <img
+                        src="../../assets/img/trucks/side-tippers-tipping.jpg"
+                        alt="Card image cap"/>
+                      <figcaption>
+                        <p>View more details</p>
+                        <a [routerLink]="['/load-details']">View more</a>
+                      </figcaption>
+                    </figure>
+
+                    <div class="card-body">
+                      <h6 class="row text_align-center">{{loadCatalogue.summary}}</h6>
+
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Company
+                          Name</label></div>
+                        <div class="col-md d-flex justify-content-between"><p
+                          class="card-text">{{loadCatalogue.company}}</p></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Address:</label>
+                        </div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p
+                              class="card-text">{{loadCatalogue.address}} <i class="fa fa-home mb-sm-1"></i></p>
+                          </a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Contact
+                          Number:</label>
+                        </div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p class="card-text">083 457 8952 <i class="fa fa-phone fa-s15 mb-sm-1"
+                                                                 aria-hidden="true"></i></p>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">From
+                          Destination:</label></div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p class="card-text">{{loadCatalogue.fromDestination}}
+                              <i class="fa fa-map-marker fa-s15 mb-sm-1" aria-hidden="true"></i></p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">To
+                          Destination:</label></div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p
+                              class="card-text">{{loadCatalogue.toDestination}}
+                              <i class="fa fa-map-marker fa-s15 mb-sm-1" aria-hidden="true"></i></p>
+                          </a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Start of Bidding
+                          Price:</label></div>
+                        <div class="col-md d-flex justify-content-between"><h6 class="card-text">
+                          R{{loadCatalogue.startBiddingPrice}}</h6></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text"></label></div>
+                        <div class="col-md-6 d-flex justify-content-between">
+                          <button class="btn btn btn-info btn-block" (click)="test()">Bid Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="row grid">
+                    <figure class="effect-ruby" style="width: 35rem;">
+                      <img
+                        src="../../assets/img/trucks/side-tippers-tipping.jpg"
+                        alt="Card image cap"/>
+                      <figcaption>
+                        <p>View more details</p>
+                        <a [routerLink]="['/load-details']">View more</a>
+                      </figcaption>
+                    </figure>
+
+                    <div class="card-body">
+                      <h6 class="row text_align-center">{{listOfLoadCatalogues[i + 1].summary}}</h6>
+
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Company
+                          Name</label></div>
+                        <div class="col-md d-flex justify-content-between"><p
+                          class="card-text">{{listOfLoadCatalogues[i + 1].company}}</p></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Address:</label>
+                        </div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p
+                              class="card-text">{{listOfLoadCatalogues[i + 1].address}} <i
+                              class="fa fa-home mb-sm-1"></i>
+                            </p>
+                          </a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Contact
+                          Number:</label>
+                        </div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p class="card-text">083 457 8952 <i class="fa fa-phone fa-s15 mb-sm-1"
+                                                                 aria-hidden="true"></i></p>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">From
+                          Destination:</label></div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p
+                              class="card-text">{{listOfLoadCatalogues[i + 1].fromDestination}}
+                              <i class="fa fa-map-marker fa-s15 mb-sm-1" aria-hidden="true"></i></p>
+                          </a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">To
+                          Destination:</label></div>
+                        <div class="col-md d-flex justify-content-between">
+                          <a href="#" style="color: #005cbf">
+                            <p
+                              class="card-text">{{listOfLoadCatalogues[i + 1].toDestination}}
+                              <i class="fa fa-map-marker fa-s15 mb-sm-1" aria-hidden="true"></i></p>
+                          </a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text">Start of Bidding
+                          Price:</label></div>
+                        <div class="col-md d-flex justify-content-between"><h6 class="card-text">
+                          R{{listOfLoadCatalogues[i + 1].startBiddingPrice}}</h6></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-between"><label class="card-text"></label></div>
+                        <div class="col-md-6 d-flex justify-content-between">
+                          <button class="btn btn btn-info btn-block" (click)="test()">Bid Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

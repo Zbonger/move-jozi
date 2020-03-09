@@ -31,8 +31,8 @@ public class LoadCatalogueResource {
     }
 
     @GetMapping("/{id}")
-    public LoadCatalogue findLoadById(HttpServletRequest request, @PathVariable Long id) {
-        return loadCatalogueService.findLoadById(id);
+    public LoadCatalogue findLoadById(HttpServletRequest request, @PathVariable String id) {
+        return loadCatalogueService.findLoadById(Long.getLong(id));
     }
 
     @GetMapping("/company/{company}")
