@@ -3,8 +3,6 @@
 #Docker file uses ubuntu image
 FROM ubuntu:18.04
 
-#ENV http_proxy 'http://qxz0hv8:zb0ngerBMWgermany4@proxy.w9:80'
-#ENV https_proxy 'http://qxz0hv8:zb0ngerBMWgermany4@proxy.w9:80'
 
 # Install dependencies
 RUN apt-get update && \
